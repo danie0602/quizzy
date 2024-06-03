@@ -1,0 +1,68 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: #ff8138;
+    transition: 1s;
+}
+h1{
+    color: #33ffd6;
+    font-family: monospace;
+    font-size: 70px;
+    transition: 2s
+}
+#loginbox {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+    height: 170px;
+    border-radius: 10px ;
+}
+
+input {
+    background-color:#252525 ;
+    color: rgb(255, 48, 145);
+    flex: display;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 10px;
+    font-family: monospace;
+    font-size: large;
+}
+label {
+    color:#33ffd6 ;
+    width: 70px;
+    height: 50px;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px;
+    font-family: monospace;
+    font-size: large;
+}
+button {
+    background-color: rgb(162, 93, 253);
+    margin:15px;
+    width: 100px;
+    height: 40px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: large;
+    border-radius: 20px;
+    transition: 1s;
+    cursor: pointer;
+    color: yellow;
+}
+button:hover {
+    background-color: rgb(174, 139, 255);
+}

@@ -1,0 +1,145 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: #000000;
+ 
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #464646;
+  overflow: hidden;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 30px;
+  margin-inline: 100px;
+}
+
+.parent {
+  display: table;
+    width: 100%; /*Optional*/
+    table-layout: fixed; /*Optional*/
+    border-spacing: 10px; /*Optional*/
+   margin: 10px;
+  }
+.column {
+  display: table-cell;
+  background-color: rgb(51, 51, 51); /*Optional*/
+  padding: 20px;
+  }
+.column a {
+
+    color: #f2f2f2;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+  }
+
+  .column a:hover {
+    color: rgb(255, 72, 0);
+    transition: 1s;
+  }
+  img {
+    width: 80%;
+    padding: 10px; 
+  }
+/* Change the color of links on hover */
+.topnav a:hover {
+  color: rgb(255, 72, 0);
+  transition: 1s;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  color: rgb(255, 72, 0);
+}
+
+h1{
+    color: #33ffd6;
+    font-family: monospace;
+    font-size: 70px;
+    animation-name: h1;
+    animation-duration: 1s;
+}
+@keyframes h1 {
+    from {
+        margin-left: 100%;
+        width: 300%;
+      }
+    
+      to {
+        margin-left: 0%;
+        width: 100%;
+      }
+
+}
+button {
+  background-color: rgb(162, 93, 253);
+  width: 200px;
+  height: 40px;
+  margin: 30px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  font-size: large;
+  border-radius: 20px;
+  transition: 1s;
+  cursor: pointer;
+  color: rgb(232, 255, 25);
+}
+
+#logout {
+ 
+ display:flex;
+ justify-content: end;
+  width: 1200px;
+  height: 40px;
+  text-decoration: none;
+  padding:10px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  font-size: large;
+  border-radius: 20px;
+  transition: 1s;
+  cursor: pointer;
+  color: rgb(176, 106, 255);
+
+}
+
+@keyframes button {
+    from {
+        margin-right: 100%;
+
+      }
+    
+      to {
+        margin-right: 0%;
+
+      }
+
+
+}
+
+button:hover {
+    background-color: rgb(99, 96, 255);
+}
+#logout:hover{
+  color: rgb(156, 155, 255);
+}
