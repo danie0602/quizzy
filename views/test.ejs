@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/test.css" />
+  </head>
+  <body>
+    <span>
+      <a id="logout" href="/logout" class="btn btn-primary">Log out</a>
+    </span>
+    <form id="form" action="QuizTable.html">
+      <div class="topnav">
+        <a href="/home/<%=userid%>">HOME</a>
+        <a class="active" href="/test/<%=userid%>">TEST</a>
+        <a href="/result/<%=userid%>">RESULT</a>
+        <a href="/myaccount/<%=userid%>">MY ACCOUNT</a>
+      </div>
+      <h1>Here are your tests</h1>
+      <div class="parent">
+        <%for(let data of datas) {%>
+        <div class="column">
+          
+          <a href="/test/<%=userid%>/<%=data.subject_id%>"><%=data.title%></a>
+          <img
+            src="https://www.travelandleisure.com/thmb/j3SOawtovFzaaHPCJXoyUfE7WRc=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/nara-mt-yoshino_BEAUJAPAN0223-b07c390603614053899b79629f4da41f.jpg"
+            alt="W3Schools.com"
+          />
+        </div> <% } %>
+       
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create student account</title>
+</head>
+<body>
+    <link rel="stylesheet" href="/stylesheets/createuser.css" />
+</head>
+<body>
+  <h1>Create student account</h1>
+  <h2>Register Form</h2>
+  <form id="form" method="post" action="/createuser">
+    <div id="loginbox">
+      <div>
+        <label for="username">Username:</label>
+        <input
+          id="username"
+          name="user_name"
+          type="text"
+          placeholder="Enter student code"
+          required
+        />
+      </div>
+      <div>
+        <label for="password">Password:</label>
+        <input
+          id="password"
+          name="user_password"
+          type="password"
+          placeholder="password"
+          required
+        />
+      </div>
+      <div>
+        <label for="firstname">First name:</label>
+        <input
+          id="firstname"
+          name="first_name"
+          type="text"
+          placeholder="firstname"
+          required
+        />
+      </div>
+      <div>
+        <label for="lastname">Last name:</label>
+        <input
+          id="lastname"
+          name="last_name"
+          type="text"
+          placeholder="lastname"
+          required
+        />
+      </div>
+    </div>
+    <button>Register</button>
+    <div class="container signin">
+      <p>Already have an account?<a href="/">Login</p>
+    </div>
+  </form>
+</body>
+</html>

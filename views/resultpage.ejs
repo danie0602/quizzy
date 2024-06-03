@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/resultpage.css" />
+  </head>
+  <body>
+    <span>
+      <a id="logout" href="/logout" class="btn btn-primary">Log out</a>
+    </span>
+    <form id="form" action="QuizTable.html">
+      <div class="topnav">
+        <a href="/home/<%=userid%>">HOME</a>
+        <a href="/test/<%=userid%>">TEST</a>
+        <a class="active" href="/result/<%=userid%>">RESULT</a>
+        <a href="/myaccount/<%=userid%>">MY ACCOUNT</a>
+      </div>
+      <h1>Student:<%=datas[0].first_name%></h1>
+      <h2>Result record</h2>
+      <table id="results">
+        <tr>
+          <th>Subject</th>
+          <th>Score</th>
+          <th>Date</th>
+        </tr>
+
+        <% for (data of datas) { %>
+        <tr>
+          <td><%= data.subject %></td>
+          <td><%= data.mark %></td>
+          <td><%= data.date %></td>
+        </tr>
+        <% } %>
+      </table>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/updatepassword.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+</head>
+  <body>
+    <span>
+      <a id="logout" href="/logout" class="btn btn-primary">Log out</a>
+    </span>
+   
+      <div class="topnav">
+        <a href="/home/<%=userid%>">HOME</a>
+        <a href="/test/<%=userid%>">TEST</a>
+        <a href="/result/<%=userid%>">RESULT</a>
+        <a class="active" href="/myaccount/<%=userid%>">MY ACCOUNT</a>
+      </div>
+      <h1>My account</h1>
+      <section>
+        <form method="POST" id="form" action="/myaccount/<%=userid%>/updatefirstname">
+        <div class="box">
+          <div class="title"><label for="firstname">First name: </label></br> 
+            <input type="text" id="firstname" name="firstname"  pattern="[a-zA-Z]{1,20}" required value="<%=data[0].first_name%>"> </strong></div>
+            <p style="text-align: left; font-family: Arial, Helvetica, sans-serif; color: gray;" >Last name must contain only lowercase, uppercase letter and 1-20 characters in length.</p>
+            <div class="tag"> <button>Save</button></div>
+        </div>
+        
+      </section>
+      </div>
+    </form>
+  </body>
+</html>

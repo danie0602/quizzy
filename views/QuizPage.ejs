@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/QuizPage.css" />
+  </head>
+  <body>
+    <span>
+      <a id="logout" href="/logout" class="btn btn-primary">Log out</a>
+    </span>
+    <form id="form" action="QuizTable.html">
+      <div class="topnav">
+        <a class="active" href="/home/<%=userid%>">HOME</a>
+        <a href="/test/<%=userid%>">TEST</a>
+        <a href="/result/<%=userid%>">RESULT</a>
+        <a href="/myaccount/<%=userid%>">MY ACCOUNT</a>
+      </div>
+      <h1>Hi <%= data[0].first_name %>, Welcome to Quizzy</h1>
+
+      <button>GET STARTED NOW!</button> <br />
+    </form>
+  </body>
+</html>

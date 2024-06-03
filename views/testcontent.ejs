@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/entrancetest.css" />
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+  </head>
+  <body>
+    <span>
+      <a id="logout" href="/logout" class="btn btn-primary">Log out</a>
+    </span>
+    <form id="form" method="post" action="/submit/<%=userid%>/<%=subjectid%>">
+      <div class="topnav">
+        <a href="/home/<%=userid%>">HOME</a>
+        <a class="active" href="/test/<%=userid%>">TEST</a>
+        <a href="/result/<%=userid%>">RESULT</a>
+        <a href="/myaccount/<%=userid%>">MY ACCOUNT</a>
+      </div>
+      <h1>English entrance exam</h1>
+      <div class="box">
+        <% let a = 0 %>
+        <% for(let data of datas) { %>
+        <div class="question">Question: <%= data.question %></div>
+        <% const answers = data.option.split("|") %> 
+        <% a += 1 %>
+        <% for (let i = 0; i < 4; i++){ %>
+          <section>
+            <div>
+              <input type="radio" id="<%=answers[i]%>"" name="question<%=a%>" value="<%= i+1 %>" required>
+              <label for="<%=answers[i]%>">
+            
+                <p><%= answers[i]%></p>
+              </label>
+            </div>
+        <%} %>
+       
+        <%} %>
+        <button>SUBMIT!</button>
+      </div>
+    </form>
+  </body>
+</html>

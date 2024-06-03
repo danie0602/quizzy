@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/scorepage.css" />
+  </head>
+  <body>
+    <span>
+      <a id="logout" href="/logout" class="btn btn-primary">Log out</a>
+    </span>
+    <form id="form" action="QuizTable.html">
+      <div class="topnav">
+        <a href="/home/<%=userid%>">HOME</a>
+        <a href="/test/<%=userid%>">TEST</a>
+        <a href="/result/<%=userid%>">RESULT</a>
+        <a href="/myaccount/<%=userid%>">MY ACCOUNT</a>
+      </div>
+      <h1>Test result</h1>
+      <div class="box">
+        <h2>Your score is: <%= point %>/20</h2>
+      </div>
+      <div>
+        <a id="result" href="/result/<%=userid%>">View your results</a>
+      </div>
+    </form>
+  </body>
+</html>
